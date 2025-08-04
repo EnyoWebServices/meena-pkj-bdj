@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join Telegram - Stock Insights</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    
+    h1 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: white;
+  font-weight: bold;
+}
+
+.elementor img {
+  border: none;
+  border-radius: 145px;
+  box-shadow: none;
+  height: auto;
+  max-width: 100%;
+}
+    
+    body {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 480px;
+      margin: auto;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      backdrop-filter: blur(10px);
+    }
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 100px;
+      margin: 20px auto;
+      border: 3px solid #fff;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+    p {
+      margin: 10px 0;
+      font-size: 0.95rem;
+    }
+    ul {
+      list-style: none;
+      margin: 15px 0;
+      padding: 0;
+    }
+    ul li {
+      margin: 10px 0;
+      text-align: left;
+      padding-left: 25px;
+      position: relative;
+    }
+    ul li::before {
+      content: '✅';
+      position: absolute;
+      left: 0;
+    }
+    .cta-btn {
+      background: yellow;
+      color: black;
+      padding: 15px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      width: 90%;
+    }
+    .timer {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 15px 0;
+      color: #00FF00;
+    }
+    .disclaimer {
+      font-size: 0.8rem;
+      color: #aaa;
+      margin-top: 20px;
+    }
+    .disclaimer span {
+      color: #f0f;
+      font-weight: bold;
+    }
+    footer {
+      margin-top: 15px;
+      font-size: 0.75rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://telegram-ads.riyazshaikh.com/wp-content/uploads/2025/07/IMG_20250731_193040.jpg" alt="Profile" class="profile-img" />
+    <h1>Get Daily Stock Market Insights — Free on Telegram</h1>
+    <p>Get market updates, potential trades, and expert analysis straight to your phone — absolutely free.</p>
+    
+    <ul>
+      <li>Daily Nifty & BankNifty Levels</li>
+      <li>No Paid Tips – Purely Educational</li>
+      <li>5+ Years of Market Experience</li>
+      <li>50000+ Subscribers Trust Us Already</li>
+    </ul>
+
+    <div class="timer">
+      Redirecting in <span id="countdown">9</span> seconds...
+    </div>
+
+    <a href="https://t.me/+Zkgi0dyeCu83OTRl" class="cta-btn" id="joinBtn">🚀 JOIN FREE TELEGRAM</a>
+
+    <p class="disclaimer">
+      <span>Disclaimer:</span> This channel is for educational and informational purposes only. We do not provide investment advice or guaranteed returns. Trading in the stock market involves risk. Please consult your financial advisor before making any investment decisions.
+    </p>
+
+  </div>
+
+  <script>
+    let counter = 559;
+    const countdownEl = document.getElementById('countdown');
+    const btn = document.getElementById('joinBtn');
+
+    const timer = setInterval(() => {
+      counter--;
+      countdownEl.innerText = counter;
+      if (counter === 0) {
+        clearInterval(timer);
+        btn.click(); // simulate button click
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
