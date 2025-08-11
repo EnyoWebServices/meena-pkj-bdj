@@ -162,15 +162,16 @@ src="https://www.facebook.com/tr?id=23942328132136573&ev=PageView&noscript=1"
     const timer = setInterval(() => {
       counter--;
       countdownEl.innerText = counter;
-      // if (counter === 0) {
-      //   clearInterval(timer);
-      //   btn.click(); // simulate button click
-      // }
+      if (counter === 0) {
+        clearInterval(timer);
+        btn.click(); // simulate button click
+      }
     }, 1000);
   </script>
 </body>
 
 </html>
+
 
 
 
